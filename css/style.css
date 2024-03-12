@@ -3,9 +3,6 @@
     width: 1000px;
     margin-right: 20px;
 }
-.main_page#from_new {
-    width: auto;
-}
 
 main {
     display: flex;
@@ -40,7 +37,7 @@ main {
 
 figure {
     display: block;
-    margin: 0 0 0.5em 0.5em;
+    margin: 0 0 8px 8px;
     float: right;
 }
 
@@ -55,19 +52,14 @@ figure {
     font-size: 14px;
     line-height: 1.6;
     border: solid #c8ccd1;
-    margin: 0 -1rem 1.5rem;
     border-radius: 2px;
     border-width: 1px;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 1.5rem;
-    padding: 1.5rem;
+    margin-bottom: 24px;
+    padding: 24px;
 }
 
-
-.main_page>span>b {
-    padding: 5px 12px;
-}
 
 img {
     display: flex;
@@ -80,7 +72,6 @@ img {
 
 .main {
     font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
-    color: #202122;
     background-color: #f8f9fa;
     border: 1px solid #c8ccd1;
     box-shadow: 0 1px 1px rgba(0,0,0,.15);
@@ -89,10 +80,6 @@ img {
     background-position: right;
     display: flex;
     margin-bottom: 1.5rem;
-    margin-top: 0.5rem;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-top: 0;
     padding-right: 1.5rem;
 }
 .main-right {
