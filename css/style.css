@@ -1,17 +1,23 @@
 
-.container {
-    white-space: nowrap; /* Запретить перенос строк */
+.main_page#Wan_Tao {
+    width: 1000px;
+    margin-right: 20px;
+}
+.main_page#from_new {
+    width: auto;
+}
 
-  }
+main {
+    display: flex;
+    white-space: nowrap;
+}
+
   
-  .container .main_page {
-    display: inline-block; /* Позволяет блокам быть выровненными горизонтально и иметь разную ширину */
-    width: 49%;
-    vertical-align: top; /* Выравнивание блоков по верхнему краю */
-    margin: 0 5px; /* Отступ между блоками */
+.main_page {
+    display: inline-block;
+    width: auto;
     white-space: normal; /* Восстановить нормальное поведение переноса строк внутри блока */
-    box-sizing: border-box; /* Учитываем padding и border в расчетах ширины */
-  }
+}
   
 /* Избранная статья */
 .main_page_head>h1>a {
@@ -34,12 +40,7 @@
 
 figure {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
     margin: 0 0 0.5em 0.5em;
-    clear: right;
     float: right;
 }
 
@@ -49,17 +50,11 @@ figure {
 } 
 
 .main_page {
-    width: calc(50% - 10px); /* Ширина блока, вычитая отступ между ними */
-    padding: 10px;
-    width: 50%;
     font-family: sans-serif;
     color: #202122;
-    font-size: calc(1em * 0.875);
+    font-size: 14px;
     line-height: 1.6;
-    direction: ltr;
-    background: #fff;
     border: solid #c8ccd1;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15);
     margin: 0 -1rem 1.5rem;
     border-radius: 2px;
     border-width: 1px;
@@ -68,9 +63,7 @@ figure {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
 }
-.main_page:nth-child(2) {
-    margin-left: 20px; /* Отступ между блоками */
-}
+
 
 .main_page>span>b {
     padding: 5px 12px;
@@ -86,20 +79,14 @@ img {
 /* Верхнее приветственное окно */
 
 .main {
-    font-family: sans-serif;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
     color: #202122;
-    line-height: 1.6;
-    direction: ltr;
-    clear: both;
-    font-size: 1rem;
     background-color: #f8f9fa;
     border: 1px solid #c8ccd1;
-    border-radius: 2px;
     box-shadow: 0 1px 1px rgba(0,0,0,.15);
     align-items: center;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e3/Wikipedia_logo_letters_banner.svg");
     background-position: right;
-    background-repeat: no-repeat;
     display: flex;
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
@@ -108,22 +95,23 @@ img {
     padding-top: 0;
     padding-right: 1.5rem;
 }
-
-.main {
-    font-size: 14px;
-    line-height: 0.5;
-    background-color: #f8f9fa;
-    border: 1px solid #c8ccd1;
-    border-radius: 2px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.15);
-    margin-bottom: 1rem;
-    padding: 0.5px;
+.main-right {
+    font-size: 15px;
 }
+
+.main-right>p>a {
+    font-family: none;
+}
+
+
 .main-left {
-   padding-left: 1.5rem;
-   background-image: linear-gradient(to right,#f8f9fa 0%,#f8f9fa 70%,rgba(248,249,250,0)100%);
-   flex: 2.5;
-   padding: 2rem 0 2rem 1rem;
+    font-size: 15px;
+    background-image: linear-gradient(to right,#f8f9fa 0%,#f8f9fa 70%,rgba(248,249,250,0)100%);
+    flex: 2.5;
+    padding: 24px 0 24px 16px;
+}
+.main-left>h1 {
+    font-weight: normal;
 }
 
 .buttons-container>ul>li {
@@ -138,19 +126,12 @@ a {
     background: none;
 }
 
-.welcome {
-    direction: ltr;
-    color: #000;
-    font-weight: normal;
-    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
-}
 
 .main-left>p {
     font-family: sans-serif;
     color: #202122;
     line-height: 1.6;
-    direction: ltr;
-    font-size: 0.875em;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -159,28 +140,20 @@ a {
     border-color: #aaaaaa;
     color: #222222;
     display: inline-block;
-    box-sizing: border-box;
     margin: 0;
     border-width: 1px;
     border-style: solid;
     border-radius: 0;
     vertical-align: middle;
-    font-family: inherit;
     font-size: 1em;
     font-weight: bold;
-    line-height: 1.28571429em;
     text-align: center;
-    background-image: none;
-    transition-property: background-color, color, border-color, box-shadow;
-    transition-duration: 100ms;
     min-width: 4em;
     max-width: 28.75em;
     padding: 5px 12px;
-    text-decoration: none;
 }
 
-.portal,
-.help {
+.portal, .help {
     border: none;
 }
 
